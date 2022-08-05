@@ -1,0 +1,14 @@
+body{}
+.imagem__background{
+    background-image: url(../formulario-assinatura-trial-HTML-CSS-JS/images/bg-intro-desktop.png);
+    height: 
+    width: 100vw;
+
+    z-index: 1;
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
