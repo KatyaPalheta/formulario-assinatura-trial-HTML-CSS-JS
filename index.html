@@ -23,12 +23,33 @@
             <div class="preco"> 
                 <p class="strong">Try it free 7 days</p>
                 <p>then $20/mo. thereafter</p> </div>
-            <form action="#" class="formulario__completo">               
-                <input type="text" name="first_name" id="first_name" placeholder="First Name" class="formulario_campo">
-                <input type="text" name="last_name" id="last_name" placeholder="Last Name" class="formulario_campo">
-                <input type="text" name="email" id="email" placeholder="Email Address" class="formulario_campo">
-                <input type="text" name="password" id="password" placeholder="Password" class="formulario_campo"> 
-                <input type="button" value="Claim your free trial" class="formulario__botao">
+            <form id="formulario__completo" class="formulario__completo">
+                <div>
+                    <label for="first_name"><input type="text" name="first_name" id="first_name" placeholder="First Name" class="formulario_campo" required></label>
+                    <i class="icone_ok"></i>
+                    <i class="icone_erro"></i>
+                    <small>msg</small>   
+                </div>
+                <div>
+                    <label for="last_name"><input type="text" name="last_name" id="last_name" placeholder="Last Name" class="formulario_campo" required></label>
+                    <i class="icone_ok"></i>
+                    <i class="icone_erro"></i>
+                    <small>msg</small> 
+                </div>            
+                <div>
+                    <label for="email"><input type="email" name="email" id="email" placeholder="Email Address" class="formulario_campo" required ></label>
+                    <i class="icone_ok"></i>
+                    <i class="icone_erro"></i>
+                    <small>msg</small> 
+                </div>
+                <div>
+                    <label for="password"><input type="password" name="password" id="password" placeholder="Password" class="formulario_campo" required minlength="6"></label>
+                    <i class="icone_ok"></i>
+                    <i class="icone_erro"></i>
+                    <small>msg</small> 
+                </div>
+                             
+                <input type="submit" value="Claim your free trial" class="formulario__botao">
             <div class="disclaimer">
                 <p>By clicking the button, you are agreeing to our </p> 
                 <a href="#"> Terms and Services</a> 
@@ -36,6 +57,8 @@
             </form>
         </div>
     </section>
+    
+    <script src="./script.js"></script>
     <footer>
         <p class="attribution">
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
