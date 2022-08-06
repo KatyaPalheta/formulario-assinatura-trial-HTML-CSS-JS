@@ -53,45 +53,59 @@ body{
     font-weight: 600;
 }
 .formulario__completo{
+    display: grid;
     justify-content: center;
+    justify-content: space-evenly;
     background-color: #ffffff;
     border: 0px solid #ffffff;
     border-radius: 10px;
-    padding: 20px;
+    height: 350px;
     font-weight: 400;
     font-size: 12px;
-    padding-top: 30px;
+    padding: 30px 20px 20px 20px;
+    text-align: right;
+    color: #ffffff;
 }
 .formulario_campo{
     border: 1px solid gray;
-    width: -webkit-fill-available;
+    width: 300px;
     border-radius: 5px;
     justify-content: stretch;
     display: block;
     padding: 12px;
-    margin-bottom: 15px;
 }
 .formulario_campo.sucess i.icone_ok{
     color: #2ecc71;
 	visibility: visible;
 }
-.formulario_campo.error i.icone_erro{
+.formulario_campo .error{
     color: #e74c3c;
 	visibility: visible;
 }
-.formulario_campo small{
+.formulario_completo small{
 	color: #e74c3c;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	visibility: hidden;
 }
-.formulario_campo.error small{
+.formulario_completo .error small{
 	visibility: visible;
 }
-/*esse trecho não está funcionando*/
+.formulario__erro{
+    background-image: url("../images/icon-error.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    border-color: hsl(0, 100%, 74%);
+    background-position-x: 95%;
+    margin-bottom: 3px;
+}
+.mostrar_erro{
+    color: hsl(0, 100%, 74%);
+}
 .formulario_campo input:focus{
-    border: hsl(248, 32%, 49%);
+    outline: 0;
+	border-color: hsl(248, 32%, 49%);
 } 
 .formulario__botao{
     background-color:  hsl(154, 59%, 51%);
@@ -114,10 +128,8 @@ body{
 }
 .disclaimer a{
     color: hsl(0, 100%, 74%);
-    text-decoration: none;
     font-weight: 600;
     margin-left: 2px;
-
 }
 .attribution { 
     font-size: 11px; text-align: center; 
