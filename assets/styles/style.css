@@ -1,6 +1,6 @@
 body{
     background-color: hsl(0, 100%, 74%);
-    background-image: url('../formulario-assinatura-trial-HTML-CSS-JS/images/bg-intro-desktop.png');
+    background-image: url('/assets/images/bg-intro-desktop.png');
     font-family: 'Poppins', sans-serif;
     Font-size: 16px;
 }
@@ -93,7 +93,7 @@ body{
 	visibility: visible;
 }
 .formulario__erro{
-    background-image: url("../images/icon-error.svg");
+    background-image: url("/assets/images/icon-error.svg");
     background-repeat: no-repeat;
     background-position: right;
     border-color: hsl(0, 100%, 74%);

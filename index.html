@@ -1,65 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend Mentor | Intro component with sign up form</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <img src="images/bg-intro-desktop.png" alt="ilustrações de fundo" class="imagem_de_fundo">
-    <section class="formulario">
-        <div class="formulario__descricao">
-            <h1 class="formulario__titulo">Learn to code by watching others</h1>
-            <p class="formulario__texto">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. </p>
-            
-        </div>
-        <div> 
-            <div class="preco"> 
-                <p class="strong">Try it free 7 days</p>
-                <p>then $20/mo. thereafter</p> </div>
-            <form id="formulario__completo" class="formulario__completo">
-                <div>
-                    <label for="first_name"></label>
-                    <input type="text" name="first_name" id="first_name" placeholder="First Name" class="formulario_campo" >
-                    <small >msn</small> 
-                </div>
-                <div>
-                    <label for="last_name"></label>
-                    <input type="text" name="last_name" id="last_name" placeholder="Last Name" class="formulario_campo" >
-                    <small >msn</small> 
-                </div>            
-                <div>
-                    <label for="email"></label>
-                    <input type="email" name="email" id="email" placeholder="Email Address" class="formulario_campo">
-                    <small >msn</small> 
-                </div>
-                <div>
-                    <label for="password"></label>
-                    <input type="password" name="password" id="password" placeholder="Password" class="formulario_campo" minlength="6">
-                    <small >msn</small> 
-                </div>
-                             
-                <input type="submit" value="Claim your free trial" class="formulario__botao">
-            <div class="disclaimer">
-                <p>By clicking the button, you are agreeing to our </p> 
-                <a href="#"> Terms and Services</a> 
-            </div>
-            </form>
-        </div>
-    </section>
-    
-    <script src="./script.js"></script>
-    <footer>
-        <p class="attribution">
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-          Coded by <a href="https://www.linkedin.com/in/katyapalheta">Katya Palheta</a>.
-        </p>
-      </footer>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Frontend Mentor | Intro component with sign up form</title>
+		<link rel="stylesheet" href="/assets/styles/reset.css" />
+		<link rel="stylesheet" href="/assets/styles/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<img
+			src="/assets/images/bg-intro-desktop.png"
+			alt="ilustrações de fundo"
+			class="imagem_de_fundo"
+		/>
+		<section class="formulario">
+			<div class="formulario__descricao">
+				<h1 class="formulario__titulo">Learn to code by watching others</h1>
+				<p class="formulario__texto">
+					See how experienced developers solve problems in real-time. Watching
+					scripted tutorials is great, but understanding how developers think is
+					invaluable.
+				</p>
+			</div>
+			<div>
+				<div class="preco">
+					<p class="strong">Try it free 7 days</p>
+					<p>then $20/mo. thereafter</p>
+				</div>
+				<form id="formulario__completo" class="formulario__completo">
+					<div>
+						<label for="first_name"></label>
+						<input
+							type="text"
+							name="first_name"
+							id="first_name"
+							placeholder="First Name"
+							class="formulario_campo"
+						/>
+						<small>msn</small>
+					</div>
+					<div>
+						<label for="last_name"></label>
+						<input
+							type="text"
+							name="last_name"
+							id="last_name"
+							placeholder="Last Name"
+							class="formulario_campo"
+						/>
+						<small>msn</small>
+					</div>
+					<div>
+						<label for="email"></label>
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Email Address"
+							class="formulario_campo"
+						/>
+						<small>msn</small>
+					</div>
+					<div>
+						<label for="password"></label>
+						<input
+							type="password"
+							name="password"
+							id="password"
+							placeholder="Password"
+							class="formulario_campo"
+							minlength="6"
+						/>
+						<small>msn</small>
+					</div>
+
+					<input
+						type="submit"
+						value="Claim your free trial"
+						class="formulario__botao"
+					/>
+					<div class="disclaimer">
+						<p>By clicking the button, you are agreeing to our</p>
+						<a href="#"> Terms and Services</a>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<script src="assets/scripts/script.js"></script>
+		<footer>
+			<p class="attribution">
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					>Frontend Mentor</a
+				>. Coded by
+				<a href="https://www.linkedin.com/in/katyapalheta">Katya Palheta</a>.
+			</p>
+		</footer>
+	</body>
 </html>

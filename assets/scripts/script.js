@@ -47,7 +47,7 @@ function setSuccessFor(input) {
     const formControl = input.parentElement;
     formControl.className = 'form-control success';
     input.classList.remove("formulario__erro");
-    smal.classList.remove("mostrar_erro");  
+    small.classList.remove("mostrar_erro");  
 }
 function isEmail(email) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
